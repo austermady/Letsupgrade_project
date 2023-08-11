@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+header {
+  background-color: rgb(253, 207, 207);
+  padding-bottom: 1%;
+  border-bottom: 0px solid;
+}
+
+.image {
+  float: left;
+  margin-top: 18.5px;
+  margin-left: 150px;
+  height: 40%;
+  width: 24.5%;
+  border-right: 8px solid rgb(255, 110, 25);
+
+
+}
+
+h1 {
+  margin-left: 50px;
+  margin-bottom: 0px;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  color: rgb(253, 102, 15);
+}
+/* div.ver_line
+{
+  width: 1px;
+  background-color: solid black;
+  height: 100%;
+  float: left;
+} */
+
+h3 {
+  margin-top: 1px;
+  border-left: 7px solid;
+  margin-bottom: 0;
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  margin-left: 480px;
+}
+h4{
+  margin-left: 20px;
+  font-size: 19px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nv ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0e171b;
+}
+.nv li{
+  float: left;
+  border-right: 1px solid white;
+}
+.nv li a{
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: wavy;
+}
+.nv li a:hover{
+  background-color: #000000;
+}
+.active {
+  background-color: rgb(253, 102, 15);
+}
+video{
+  width: 100%;
+}
+.sidebar {
+  position: absolute;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 20px;
+  top: 340px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 340px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(back.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
